@@ -12,4 +12,20 @@ app = Flask(__name__)
 def index():
     """Strona główna"""
     return render_template('index.html')
+    
+@app.route('/lista')
+def lista():
+    return render_template('lista.html', query=pytania)
+    
+@app.route('/uczniowie')
+def uczniowie():
+    return render_template('uczniowie.html', query=pytania)
+
+
+@app.route('/dodaj', methods=['GET', 'POST'])
+def dodaj():
+    form = DodajForm()
+    
+    return render_template('dodaj.html', form=form)
+
 

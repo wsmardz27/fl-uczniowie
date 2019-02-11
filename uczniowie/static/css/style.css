@@ -1,0 +1,17 @@
+body { 
+    background: #ADD8E6;
+    color: #4D4D4D;
+}
+#menu li { display: inline; }
+#komunikaty {
+    width: 80%;
+    margin: 2em;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+span.blad {color: red; }
+span.blad {color: green; }
+span.blad {color: blue; }
+
+ol.alfabet {list-style-type: lower-alpha; }
+.bg-nawigacja { background-color: #746871; }
